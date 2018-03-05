@@ -148,7 +148,7 @@ export function canvas(canvas = document.createElement('canvas')) {
   canvas.replace = wrap(replace);
   canvas.contents = wrap(contents);
   canvas.getPixelArray = wrap(getPixelArray);
-  
+
   // // Filter methods
   canvas.brightnessContrast = wrap(filters.brightnessContrast);
   canvas.hexagonalPixelate = wrap(filters.hexagonalPixelate);
@@ -172,6 +172,8 @@ export function canvas(canvas = document.createElement('canvas')) {
   canvas.vignette = wrap(filters.vignette);
   canvas.vibrance = wrap(filters.vibrance);
   canvas.sepia = wrap(filters.sepia);
+  // added
+  canvas.colorMatrix = wrap(filters.colorMatrix);
 
   return canvas;
 }
